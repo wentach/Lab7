@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Анкета</title>
+	<style>
+		table {
+			border-collapse: collapse;
+			width: 80%;
+			margin: auto;
+			background-color: #afeeee;
+		}
+		td {
+			padding: 10px;
+			font-size: 16px;
+			font-weight: bold;
+			text-align: right;
+			width: 40%;
+			border: 1px solid black;
+		}
+		input[type="text"],
+		input[type="email"],
+		input[type="tel"] {
+			padding: 5px;
+			font-size: 16px;
+			border: none;
+			width: 60%;
+			margin-left: 10px;
+		}
+		select {
+			padding: 5px;
+			font-size: 16px;
+			border: none;
+			width: 60%;
+			margin-left: 10px;
+		}
+		textarea {
+			padding: 5px;
+			font-size: 16px;
+			border: none;
+			width: 60%;
+			height: 80px;
+			margin-left: 10px;
+		}
+		input[type="submit"],
+		input[type="reset"] {
+			padding: 10px 20px;
+			font-size: 16px;
+			font-weight: bold;
+			background-color: #00ced1;
+			color: white;
+			border: none;
+			margin: 10px 20px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<table>
+			<tr>
+				<td>Прізвище:</td>
+				<td><input type="text" name="surname"></td>
+			</tr>
+			<tr>
+				<td>Ім'я:</td>
+				<td><input type="text" name="name"></td>
+			</tr>
+			<tr>
+				<td>По-батькові:</td>
+				<td><input type="text" name="patronymic"></td>
+			</tr>
+			<tr>
+				<td>Число і рік народження:</td>
+				<td><input type="text" name="birthdate"></td>
+			</tr>
+			<tr>
+				<td>Домашня адреса:</td>
+				<td><textarea name="address"></textarea></td>
+			</tr>
+			<tr>
+				<td>Місце навчання(роботи):</td>
+				<td><input type="text" name="education"></td>
+			</tr>
+			<tr>
+				<td>Домашній(робочий) телефон:</td>
+				<td><input type="tel" name="phone"></td>
+			</tr>
+			<tr>
+				<td>E-mail:</td>
+				<td><input type="email" name="email"></td>
+			</tr>
+			<tr>
+				<td>Область наукових інтересів:</td>
+				<td>
+					<select name="interests" multiple>
+						<option value="1">Інформатика</option>
+						<option value="2">Кібербезпека</option>
+						<option value="3">Штучний інтелект</option>
+						<option value="4">Комп'ютерні мережі</option>
+						<option value="5">Безпека інформації</option>
+						<option value="6">Інше</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" style="text-align: center;">
+				<input type="reset" value="Відмінити введення">
+				<input type="submit" value="Надіслати дані та перейти до 2 етапу реєстрації">
+			</td>
+		</tr>
+	</table>
+</form>
+</body>
+</html>

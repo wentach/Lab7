@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Форма для комп'ютерних наук</title>
+	<style>
+		label {
+			display: block;
+			margin-top: 10px;
+			font-weight: bold;
+			font-size: 18px;
+		}
+		input, select, textarea {
+			font-size: 16px;
+			padding: 5px;
+			border: 1px solid #ccc;
+			border-radius: 3px;
+			margin-bottom: 10px;
+			width: 300px;
+		}
+		textarea {
+			height: 150px;
+		}
+		button[type=submit] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 10px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 18px;
+			margin-top: 10px;
+		}
+		button[type=submit]:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<center><h1>Моя форма для комп'ютерних наук</h1>
+	<form action="submit.php" method="post">
+		<label for="file-input">Виберіть файл для завантаження:</label>
+		<input type="file" id="file-input" name="file">
+
+		<label for="password-input">Введіть пароль:</label>
+		<input type="password" id="password-input" name="password">
+
+		<label>Виберіть вашу стать:</label>
+		<label for="radio-input-1">Чоловік</label>
+		<input type="radio" id="radio-input-1" name="radio" value="male">
+		<label for="radio-input-2">Жінка</label>
+		<input type="radio" id="radio-input-2" name="radio" value="female">
+
+		<label>Виберіть мову програмування:</label>
+		<label for="checkbox-input-1">Java</label>
+		<input type="checkbox" id="checkbox-input-1" name="checkbox-1" value="java">
+		<label for="checkbox-input-2">Python</label>
+		<input type="checkbox" id="checkbox-input-2" name="checkbox-2" value="python">
+		<label for="checkbox-input-3">JavaScript</label>
+		<input type="checkbox" id="checkbox-input-3" name="checkbox-3" value="javascript">
+
+		<label for="select-input">Виберіть ваш рівень знань:</label>
+		<select id="select-input" name="select">
+			<option value="beginner">Початківець</option>
+			<option value="intermediate">Середній рівень</option>
+			<option value="advanced">Продвинутий</option>
+		</select>
+
+		<label for="textarea-input">Напишіть про себе:</label>
+		<textarea id="textarea-input" name="textarea"></textarea>
+
+	<label for="input-text">Введіть ваше ім'я:</label>
+	<input type="text" id="input-text" name="input-text" placeholder="Ім'я">
+
+	<button type="submit">Надіслати</button>
+</form></center>
+</body>
+</html>
